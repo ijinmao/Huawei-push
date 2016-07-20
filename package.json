@@ -1,6 +1,6 @@
 {
   "name": "huawei-push",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Huawei Android Push Node SDK",
   "main": "index.js",
   "scripts": {
