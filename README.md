@@ -22,13 +22,16 @@
 var msg = new Message();
 msg
   .title('title example')
-  .content('description example');
+  .content('description example')
+  .extras({'user_id': 4843, 'target': 'Greedy Land'});
 var notification = new Notification({
   appId: 'your appId',
   appSecret: 'your appSecret'
 });
 notification.send('your device token', msg, config.callback);
 ```
+
+* 注意，自定义信息 extras 华为接口是需要传 Array，但我觉得不方便，所以这里可以支持传字典。
 
 使用示例可以参看[example](./example).
 
